@@ -14,6 +14,26 @@ const CounterReducer = (state = initialState, action) => {
             return {
                 counter: state.counter -= 1
             }
+        case "OnTwo":
+            return {
+                counter: state.counter *= 2
+            }
+        case "PlusTwo":
+            return {
+                counter: state.counter += 2
+            }
+        case "InTwo":
+            return {
+                counter: state.counter /= 2
+            }
+        case "MinusTwo":
+            return {
+                counter: state.counter -= 2
+            }
+        case "Zero":
+            return {
+                counter: state.counter *= 0
+            }
         default:
             return state
     }
